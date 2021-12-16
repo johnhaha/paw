@@ -15,6 +15,6 @@ func StartPaw(ctx context.Context, token string, pageID string, version string) 
 	startListen(ctx)
 }
 
-func Log(msg string) {
-	echo.Pub(logChannel, msg)
+func Log(msg string) error {
+	return echo.Pub(logChannel, msg)
 }

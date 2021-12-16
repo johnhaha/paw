@@ -1,6 +1,8 @@
 package paw
 
 import (
+	"log"
+
 	"github.com/johnhaha/echo"
 	"github.com/johnhaha/nose"
 )
@@ -8,5 +10,8 @@ import (
 func onLog(c *echo.SubCtx) {
 	msg := c.Data
 	n := nose.NewPageClient(notionToken, logPageID)
-	n.AppendTextBlock(getNowTimeString() + " | " + msg)
+	err := n.AppendTextBlock(getNowTimeString() + " | " + msg)
+	if err != nil {
+		log.Println("paw log failed", err.Error(), msg)
+	}
 }
