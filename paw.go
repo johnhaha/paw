@@ -12,6 +12,7 @@ func StartPaw(ctx context.Context, token string, pageID string, version string) 
 	c := nose.NewPageClient(token, pageID)
 	res := c.NewEmptyPage(getNowTimeString() + tail)
 	logPageID = res
+	notionToken = token
 	startListen(ctx)
 }
 

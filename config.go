@@ -4,5 +4,5 @@ var notionToken = ""
 var logPageID = ""
 
 const (
-	logChannel = "log"
+	logChannel = "paw_log"
 )
