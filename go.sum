@@ -9,6 +9,8 @@ github.com/johnhaha/echo v0.0.10/go.mod h1:P+jjpH4AjuL92td6q+l9bvLCtZmKGyaFd6QID
 github.com/johnhaha/hakit v0.1.20/go.mod h1:V78QcgJlyKcEm9C1GVioUDMSmr8PSxHlbIid2b37cxs=
 github.com/johnhaha/nose v0.0.2 h1:JLo6YoG8I9JWnkFdVixi7n0kzV/IYGIYkMTyoPsVNyM=
 github.com/johnhaha/nose v0.0.2/go.mod h1:1xTcIahYNbpVkhouQqVyI/WymHyZmsU8jU/VuZOpr/c=
+github.com/johnhaha/nose v0.0.3 h1:RcfnUS4LFIkLay400MI8DqI8pDFhBH4M5QAaKzYFzyo=
+github.com/johnhaha/nose v0.0.3/go.mod h1:1xTcIahYNbpVkhouQqVyI/WymHyZmsU8jU/VuZOpr/c=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
