@@ -6,6 +6,7 @@ import (
 	"github.com/johnhaha/echo"
 )
 
+//listen to log
 func onLog(c *echo.SubCtx) {
 	var msg LogMsg
 	err := c.Parser(&msg)
