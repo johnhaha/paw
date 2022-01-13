@@ -4,13 +4,16 @@ import (
 	"log"
 
 	"github.com/johnhaha/echo"
-	"github.com/johnhaha/nose"
 )
 
 func onLog(c *echo.SubCtx) {
-	msg := c.Data
-	n := nose.NewPageClient(notionToken, logPageID)
-	err := n.AppendTextBlock(getNowTimeString() + " | " + msg)
+	var msg LogMsg
+	err := c.Parser(&msg)
+	if err != nil {
+		log.Println("paw parse log msg failed")
+		return
+	}
+	err = msg.Log()
 	if err != nil {
 		log.Println("paw log failed", err.Error(), msg)
 	}

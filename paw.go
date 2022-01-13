@@ -4,22 +4,15 @@ import (
 	"context"
 
 	"github.com/johnhaha/echo"
-	"github.com/johnhaha/nose"
 )
 
-func StartPaw(ctx context.Context, token string, pageID string, version string) error {
-	tail := "-log-" + version
-	c := nose.NewPageClient(token, pageID)
-	res, err := c.NewEmptyPage(getNowTimeString() + tail)
-	if err != nil {
-		return err
-	}
-	logPageID = res
+func StartPaw(ctx context.Context, token string, pageID string) error {
+	logPageID = pageID
 	notionToken = token
 	startListen(ctx)
 	return nil
 }
 
-func Log(msg string) error {
-	return echo.Pub(logChannel, msg)
+func Log(title string, msg string) error {
+	return echo.PubJson(logChannel, NewLogMsg(title, msg))
 }
