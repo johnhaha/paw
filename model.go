@@ -10,8 +10,8 @@ type LogMsg struct {
 
 func NewLogMsg(title string, content string) *LogMsg {
 	return &LogMsg{
-		Time:    getNowTimeString() + " ",
-		Title:   title + " ",
+		Time:    getNowTimeString(),
+		Title:   " " + title + " ",
 		Content: content,
 	}
 }
