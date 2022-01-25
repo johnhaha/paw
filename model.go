@@ -1,6 +1,8 @@
 package paw
 
-import "github.com/johnhaha/nose"
+import (
+	"github.com/johnhaha/nose"
+)
 
 type LogMsg struct {
 	Time    string `json:"time" nose:"text-code"`

@@ -1,4 +1,6 @@
 github.com/johnhaha/echo v0.1.6 h1:MP0EGs/wPip6rujMxo2txiEK6/W0UPn+XyW/9rGsDiE=
 github.com/johnhaha/echo v0.1.6/go.mod h1:7kgHaqkLDI7s9kF/0hJhcv2jGBG959B5N3XkEVzmmuw=
+github.com/johnhaha/echo v0.1.8 h1:YCDBJPEzjfK9ClLiQDuYn5Sxxg+ZLZydS7C8Xi69sco=
+github.com/johnhaha/echo v0.1.8/go.mod h1:7kgHaqkLDI7s9kF/0hJhcv2jGBG959B5N3XkEVzmmuw=
 github.com/johnhaha/nose v0.0.7 h1:rDbu7hDOyQWYTopF47tEPGaOgjQ51zMARszMWvBdVjg=
 github.com/johnhaha/nose v0.0.7/go.mod h1:1xTcIahYNbpVkhouQqVyI/WymHyZmsU8jU/VuZOpr/c=
