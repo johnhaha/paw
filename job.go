@@ -6,8 +6,10 @@ import (
 	"github.com/johnhaha/echo"
 )
 
+var (
+	logPubSub = echo.NewPubSub[LogMsg]()
+)
+
 func startListen(ctx context.Context) {
-	e := echo.NewSuber()
-	e.Add(logChannel, onLog)
-	e.Sub(ctx)
+	logPubSub.Sub(ctx, "paw", 10, onLog)
 }

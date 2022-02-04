@@ -3,7 +3,6 @@ package paw
 import (
 	"context"
 
-	"github.com/johnhaha/echo"
 	"github.com/johnhaha/nose"
 )
 
@@ -15,7 +14,11 @@ func StartPaw(ctx context.Context, token string, pageID string) error {
 }
 
 func Log(title string, msg string) error {
-	return echo.PubJson(logChannel, NewLogMsg(title, msg))
+	return logPubSub.Pub(LogMsg{
+		Time:    getNowTimeString(),
+		Title:   title,
+		Content: msg,
+	})
 }
 
 func LogToDB(dbID string, data interface{}) error {
