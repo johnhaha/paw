@@ -21,7 +21,7 @@ func Log(title string, msg string) error {
 	})
 }
 
-func LogToDB(dbID string, data interface{}) error {
+func LogToDB(dbID string, data any) error {
 	db := nose.NewDBClient(notionToken, dbID)
 	_, err := db.SaveData(data)
 	return err

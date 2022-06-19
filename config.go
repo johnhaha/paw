@@ -5,4 +5,5 @@ var logPageID = ""
 
 const (
 	logChannel = "paw_log"
+	appName    = "paw"
 )

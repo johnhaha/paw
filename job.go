@@ -11,5 +11,5 @@ var (
 )
 
 func startListen(ctx context.Context) {
-	logPubSub.Sub(ctx, "paw", 10, onLog)
+	logPubSub.Sub(ctx, appName, 10, onLog)
 }
